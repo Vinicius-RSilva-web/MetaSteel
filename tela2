@@ -1,0 +1,124 @@
+<!doctype html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MetaSteel</title>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+                font-family: Segoe UI, sans-serif;
+            }
+
+            body{
+                background: #000000;
+                background: linear-gradient(0deg,rgba(0, 0, 0, 1) 0%, rgba(112, 105, 105, 1) 76%);;
+                display: flex;
+            }
+
+            .sidebar{
+                width: 250px;
+                height: 100vh;
+                background: #F7D4C9;
+                background: linear-gradient(0deg,rgba(247, 212, 201, 1) 0%, rgba(252, 105, 0, 1) 76%);
+                color: gray;
+                position: fixed;
+                left: 0;
+                top: 0;
+            }
+
+            .logo{
+                padding: 20px;
+                font-size: 24px;
+                font-weight: bold;
+                border-bottom: 1px solid rgba(255,255,255,.1);
+            }
+
+            .menu{
+                list-style: none;
+            }
+
+            .menu li{
+                padding: 15px 20px;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+
+            .menu li:hover{
+                background: #374151;
+            }
+
+            .menu li.active{
+                background: #d4d4d4;
+            }
+
+            .main{
+                margin-left: 250px;
+                width: calc(100% - 250px);
+                padding: 25px;
+            }
+
+            .header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 25px;
+            }
+
+            .user{
+                background: white;
+                padding: 10px 15px;
+                border-radius: 8px;
+                box-shadow: 0 2px 8px rgba(0,0,0,.08);
+            }
+             .menu li a {
+                display: block;
+                text-decoration: none;
+                color: inherit;
+                padding: 10px;
+            }
+            
+            @media(max-width:768px) {
+                .sidebar{
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                }
+                .main{
+                    margin-left: 0;
+                    width: 100%;
+                }
+                body{
+                    flex-direction: column;
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+        <div class="sidebar">
+            <div class="logo">MetaSteel</div>
+            <ul class="menu">
+                <li>Login</li>
+                <li><a href="index.html">Início</a></li>
+                <li>Vendas</li>
+                <li>Compras</li>
+                <li>Produtos</li>
+                <li>Contatos</li>
+                <li>Endereço</li>
+                <li>Material</li>
+                
+            </ul>
+        </div>
+        <div class="card">
+            <img src="img/chicote.jpg" alt="Chicote Elétrico">
+            <span class="categoria">CATEGORIA</span>
+            <h3>Chicote Elétrico</h3>
+        </div>
+
+        
+    </body>
+</html>
