@@ -13,8 +13,7 @@
             }
 
             body{
-                background: #000000;
-                background: linear-gradient(0deg,rgba(0, 0, 0, 1) 0%, rgba(112, 105, 105, 1) 76%);;
+                background: #706969;
                 display: flex;
             }
 
@@ -73,11 +72,44 @@
                 border-radius: 8px;
                 box-shadow: 0 2px 8px rgba(0,0,0,.08);
             }
-             .menu li a {
-                display: block;
-                text-decoration: none;
-                color: inherit;
+
+            .cards{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            .card{
+                background: #fff;
+                border-radius: 5px;
+                overflow: hidden;
                 padding: 10px;
+                box-shadow: 0 2px 5px rgba(0,0,0,.2);
+            }
+
+            .card img{
+                width: 100px;
+                height: 120px;
+                object-fit: cover;
+            }
+
+            .categoria{
+                font-size: 10px;
+                font-weight: bold;
+                color: #555;
+                display: block;
+                margin-top: 10px;
+            }
+
+            .card h3{
+                margin: 5px 0;
+                font-size: 18px;
+            }
+
+            .card p{
+                font-size: 12px;
+                color: #777;
             }
             
             @media(max-width:768px) {
@@ -104,7 +136,7 @@
             <ul class="menu">
                 <li>Login</li>
                 <li><a href="index.html">Início</a></li>
-                <li>Vendas</li>
+                <li class="active">Vendas</li>
                 <li>Compras</li>
                 <li>Produtos</li>
                 <li>Contatos</li>
@@ -113,11 +145,13 @@
                 
             </ul>
         </div>
-        <div class="card">
-            <img src="img/chicote.jpg" alt="Chicote Elétrico">
-            <span class="categoria">CATEGORIA</span>
-            <h3>Chicote Elétrico</h3>
-        </div>
+        <div class="cards">
+                <div class="card">
+                    <img src="img/chicote.jpg" alt="Chicote Elétrico">
+                    <span class="categoria">CATEGORIA</span>
+                    <h3>Chicote Elétrico</h3>
+                </div>
+            </div>
 
         
     </body>
