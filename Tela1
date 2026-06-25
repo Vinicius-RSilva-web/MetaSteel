@@ -77,11 +77,10 @@
             }
 
             .cards{
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 15px;
-                max-width: 900px;
-                margin: 175px auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
             }
 
             .card{
@@ -93,7 +92,7 @@
             }
 
             .card img{
-                width: 100%;
+                width: 100px;
                 height: 120px;
                 object-fit: cover;
             }
